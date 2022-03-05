@@ -9,8 +9,13 @@
 #include <frc/TimedRobot.h>
 #include <frc/smartdashboard/SendableChooser.h>
 
+#include "subsystems/Drivetrain.hpp"
+
 class Robot : public frc::TimedRobot {
  public:
+
+  Drivetrain drivetrain;
+
   void RobotInit() override;
   void RobotPeriodic() override;
   void AutonomousInit() override;
